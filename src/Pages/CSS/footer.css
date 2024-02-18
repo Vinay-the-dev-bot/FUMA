@@ -1,0 +1,90 @@
+#footer {
+  background-color: #75c9b7;
+  padding: 50px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+#footerDiv {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  height: 300px;
+}
+#footerLeft {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: space-around;
+  height: 90%;
+}
+#footerRight {
+  width: 40%;
+  margin: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footerEmail,
+#foolterButton,
+#footerMesage {
+  width: 90%;
+  padding: 10px;
+}
+#footerMesage {
+  border-radius: 5px;
+  border-bottom: 1px solid black;
+}
+#foolterButton {
+  background-color: #c7ddcc;
+}
+
+.homeLinks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20px; */
+  gap: 20px;
+  width: 70%;
+}
+#header {
+  padding: 5px 0;
+}
+.homeLinks #socialMedia1,
+.homeLinks #socialMedia2,
+.homeLinks #socialMedia3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  width: 60%;
+  transition: 0.5s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.homeLinks #socialMedia1 a p,
+.homeLinks #socialMedia2 a p,
+.homeLinks #socialMedia3 a p {
+  margin-bottom: 10px;
+}
+.homeLinks #socialMedia1 p,
+.homeLinks #socialMedia2 p,
+.homeLinks #socialMedia3 p {
+  position: relative;
+  top: 3px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.homeLinks #socialMedia1:hover p,
+.homeLinks #socialMedia2:hover p,
+.homeLinks #socialMedia3:hover p {
+  color: #a39274;
+  transition: 0.5s;
+}

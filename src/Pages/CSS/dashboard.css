@@ -1,0 +1,32 @@
+table,
+tr,
+td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+}
+#userPrf {
+  font-size: 30px;
+}
+#usersDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+td {
+  padding: 0 20px;
+  text-align: center;
+}
+#userProfile {
+  margin: 75px auto;
+}
+#reqRoleChange,
+#getUsers {
+  display: block;
+  background-color: #264e70;
+  color: white;
+  border-radius: 5px;
+  width: 20%;
+  margin: 50px auto;
+  border: 1px solid black;
+}
