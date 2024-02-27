@@ -16,8 +16,7 @@ allowing you to seamlessly handle user registrations, logins, profile viewing, a
 ## Table of Contents
 
 - [About FUMA](#about-FUMA)
-- [TechStack](#technology-stack)
-- [Project Overview](#project-overview)
+- [TechStack](#technology-stack) 
 - [Project Screenshots](#project-screenshots)
 - [Backend GitHub Repositories](#backend-github-repositories)
 - [Backend Live](#backend-live)
@@ -46,13 +45,11 @@ This project represents a culmination of my skills and expertise in fullstack de
 - **Backend**
   - Node.js
   - Express.js
-
-## Project Overview
+ 
 
 ## Project Screenshots
 
 Here are some screenshots from our FUMA application:
-
 
 - **Home:**
   ![Home](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/350a0083-f503-4803-a245-5b0091d7f550)
