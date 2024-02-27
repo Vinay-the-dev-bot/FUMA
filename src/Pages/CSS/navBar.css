@@ -34,3 +34,8 @@ p {
   background-color: tomato;
   height: inherit;
 }
+.announcement {
+  text-align: center;
+  padding: 2px;
+  background-color: red;
+}

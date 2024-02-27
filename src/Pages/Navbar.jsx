@@ -27,7 +27,7 @@ const Navbar = () => {
       });
     }
   };
-  const active = window.location.href.includes("dashboard");
+
   return (
     <>
       {/* <p>{JSON.stringify(state)}</p> */}

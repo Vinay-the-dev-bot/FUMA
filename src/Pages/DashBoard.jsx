@@ -2,11 +2,15 @@ import { useDispatch, useSelector } from "react-redux";
 import "./CSS/dashboard.css";
 import UserCard from "./UserCard";
 import { useToast } from "@chakra-ui/react";
+import { useState } from "react";
+import LoadingToast from "./LoadingToast";
 
 const DashBoard = () => {
   const state = useSelector((state) => state);
   const toast = useToast();
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleAdminAcces = () => {
     setTimeout(() => {
       toast({
@@ -18,6 +22,7 @@ const DashBoard = () => {
     }, 500);
   };
   const getUsers = async () => {
+    setIsLoading(true);
     const res = await fetch(`${state.url}/users`, {
       method: "GET",
       headers: {
@@ -27,9 +32,11 @@ const DashBoard = () => {
     });
     const data = await res.json();
     dispatch({ type: "ALLUSERS", payload: data.msg });
+    setIsLoading(false);
   };
   return (
     <>
+      {isLoading && <LoadingToast message={"Getting Users"} />}
       <div id="userProfile">
         <h1 id="userPrf">User Profile</h1>
 
@@ -85,9 +92,9 @@ const DashBoard = () => {
         )} */}
         {state.users.length > 0 && (
           <div id="usersDiv">
-            {state.users.map((user) => (
-              <UserCard user={user} />
-            ))}
+            {state.users.map((user) => {
+              return state.user.email != user.email && <UserCard user={user} />;
+            })}
           </div>
         )}
       </div>

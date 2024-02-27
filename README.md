@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# FUMA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Welcome to FUMA!**
 
-## Available Scripts
+Welcome to Full Stack User Management! Our application provides comprehensive user management capabilities,
+allowing you to seamlessly handle user registrations, logins, profile viewing, and user administration tasks.
 
-In the project directory, you can run:
+## Live Link
 
-### `npm start`
+<a href="h p/" target="_blank">FUMA</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Authors
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Vinayagoud Meti
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [About FUMA](#about-FUMA)
+- [TechStack](#technology-stack)
+- [Project Overview](#project-overview)
+- [Project Screenshots](#project-screenshots)
+- [Backend GitHub Repositories](#backend-github-repositories)
+- [Backend Live](#backend-live)
 
-### `npm run build`
+## About FUMA
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project represents a culmination of my skills and expertise in fullstack development. Designed with a focus on efficiency, usability, and security, this application serves as a showcase of my capabilities in building robust web-based solutions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## TechStack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:**
 
-### `npm run eject`
+  - HTML
+  - CSS
+  - JavaScript
+  - React.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **State Management:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **UI Libraries:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  - Chakra UI
 
-## Learn More
+- **Backend**
+  - Node.js
+  - Express.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Overview
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Screenshots
 
-### Code Splitting
+Here are some screenshots from our FUMA application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- - **Home:**
+  ![Home](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/acd62e82-f7da-4ba5-8e96-471532c60ee2) -->
 
-### Analyzing the Bundle Size
+- **Home:**
+  ![Home](https://gith 532c60ee2)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Add Notes:**
+  ![Add Note](https://githu 0d7b8)
 
-### Making a Progressive Web App
+- **Sign Up:**
+  ![Sign Up](https://gi b-512b174364db)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Log In:**
+  ![Login](https://g 11-83e5-461798f4699b)
 
-### Advanced Configuration
+- **Update Note:**
+  ![Update Note](https://githu -b35f-538a85fd099a)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Delete Note:**
+  ![Delete Note](https: -6b5348022b42)
 
-### Deployment
+## Backend GitHub Repositories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<a href="https://github.com/Vinay-the-dev-bot/FUMA-Server" target="_blank">FUMA Server Github link</a>
 
-### `npm run build` fails to minify
+## Backend Live
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://FUMA-server.onrender.com" target="_blank">FUMA Backend Live link</a>

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./CSS/navBar.css";
 import "./CSS/Login.css";
 import { useToast } from "@chakra-ui/react";
+import LoadingToast from "./LoadingToast";
 
 const Login = () => {
   const toast = useToast();
@@ -12,6 +13,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +22,7 @@ const Login = () => {
       password: password,
     };
     if (email && password) {
+      setIsLoading(true);
       const res = await fetch(`${url}/user/login`, {
         method: "POST",
         headers: {
@@ -29,6 +32,7 @@ const Login = () => {
       });
       const data = await res.json();
 
+      setIsLoading(false);
       if (data.msg != "Authenticated") {
         toast({
           title: `${data.msg}`,
@@ -64,11 +68,18 @@ const Login = () => {
       });
     }
   };
+
   return (
     <>
+      <p className="announcement">
+        Pls Note : It May take up to 2-3 minutes to spinup the server on Render
+        in order get response.
+      </p>
+
+      {isLoading && <LoadingToast message={"Logging IN"} />}
       <div id="loginDiv">
         <form id="loginForm" onSubmit={handleFormSubmit}>
-          <label for="username">Username:</label>
+          <label htmlFor="username">Username:</label>
           <br />
           <input
             type="text"
@@ -79,7 +90,7 @@ const Login = () => {
           />
           <br />
 
-          <label for="password">Password:</label>
+          <label htmlFor="password">Password:</label>
           <br />
           <input
             type="password"

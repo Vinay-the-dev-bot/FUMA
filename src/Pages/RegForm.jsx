@@ -3,6 +3,7 @@ import "./CSS/RegForm.css";
 import { useSelector } from "react-redux";
 import { useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router";
+import LoadingToast from "./LoadingToast";
 
 const RegForm = () => {
   const toast = useToast();
@@ -15,6 +16,7 @@ const RegForm = () => {
   const [location, setLocation] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const resetForm = () => {
     setUsername("");
     setEmail("");
@@ -26,6 +28,7 @@ const RegForm = () => {
   };
 
   const handleFormSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
     const userData = {
       email: email,
@@ -51,6 +54,7 @@ const RegForm = () => {
           duration: 1000,
           isClosable: true,
         });
+        setIsLoading(false);
       } else {
         const res = await fetch(`${url}/users/register`, {
           method: "POST",
@@ -59,6 +63,7 @@ const RegForm = () => {
           },
           body: JSON.stringify(userData),
         });
+        setIsLoading(false);
         const data = await res.json();
         if (data.msg.includes("dup key")) {
           toast({
@@ -67,6 +72,7 @@ const RegForm = () => {
             duration: 1000,
             isClosable: true,
           });
+          setIsLoading(false);
         } else {
           setTimeout(() => {
             resetForm();
@@ -94,9 +100,10 @@ const RegForm = () => {
   };
   return (
     <>
+      {isLoading && <LoadingToast message={"Signing Up"} />}
       <div id="regForm">
         <form id="form" onSubmit={handleFormSubmit}>
-          <label for="username">Username:</label>
+          <label htmlFor="username">Username:</label>
           <input
             type="text"
             id="username"
@@ -106,7 +113,7 @@ const RegForm = () => {
             onChange={(e) => setUsername(e.target.value)}
           />
           {/* <br /> */}
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -118,7 +125,7 @@ const RegForm = () => {
           {/* <br /> */}
           <div id="innerForm">
             <div>
-              <label for="dob">Date of Birth:</label>
+              <label htmlFor="dob">Date of Birth:</label>
               <input
                 type="date"
                 id="dob"
@@ -129,7 +136,7 @@ const RegForm = () => {
               />
             </div>
             <div>
-              <label for="role">Role:</label>
+              <label htmlFor="role">Role:</label>
               <select
                 id="role"
                 name="role"
@@ -147,7 +154,7 @@ const RegForm = () => {
           </div>
 
           {/* <br /> */}
-          <label for="location">Location:</label>
+          <label htmlFor="location">Location:</label>
           <input
             value={location}
             type="text"
@@ -157,7 +164,7 @@ const RegForm = () => {
             onChange={(e) => setLocation(e.target.value)}
           />
           {/* <br /> */}
-          <label for="password">Password:</label>
+          <label htmlFor="password">Password:</label>
           <input
             value={password}
             type="password"
@@ -167,7 +174,7 @@ const RegForm = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           {/* <br /> */}
-          <label for="confirm_password">Confirm Password:</label>
+          <label htmlFor="confirm_password">Confirm Password:</label>
           <input
             type="password"
             id="confirm_password"

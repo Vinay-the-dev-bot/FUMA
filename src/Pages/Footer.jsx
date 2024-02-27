@@ -14,7 +14,7 @@ const Footer = () => {
             {/* <p>Linked In</p>
             <p>Instagram</p>
             <p>GitHub</p> */}
-            <div class="homeLinks">
+            <div className="homeLinks">
               <div id="socialMedia1">
                 <a
                   id="contact-github"

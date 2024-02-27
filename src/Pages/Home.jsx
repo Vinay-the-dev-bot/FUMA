@@ -12,10 +12,14 @@ const Home = () => {
         {/* Home Page: */}
         <h1 id="welcome">Fullstack User Management Application!</h1>
         <p>
-          This project represents a culmination of my skills and expertise in
+          {/* This project represents a culmination of my skills and expertise in
           fullstack development. Designed with a focus on efficiency, usability,
           and security, this application serves as a showcase of my capabilities
-          in building robust web-based solutions.
+          in building robust web-based solutions. */}
+          Welcome to <strong>Full Stack User Management!</strong> Our
+          application provides comprehensive user management capabilities,
+          allowing you to seamlessly handle user registrations, logins, profile
+          viewing, and user administration tasks.
         </p>
         <h1 className="headingsss">Key Features</h1>
         <strong>User Authentication:</strong>
@@ -47,22 +51,27 @@ const Home = () => {
           functionality across various devices and screen sizes.
         </p> */}
         <strong className="headingsss"> Tech Stack </strong>
-        <p>
+        <div>
           Leveraging a combination of frontend and backend technologies, this
           application demonstrates my proficiency in fullstack development.
           <ul id="techstack">
+            <h1 className="listTitle">Front End : </h1>
             <li>HTML</li>
             <li> CSS</li>
             <li>JavaScript</li>
             <li>React</li>
-            <li>MongoDB</li>
+
+            <h1 className="listTitle">Back End : </h1>
             <li>Mongoose ODM</li>
             <li>Node.js</li>
             <li>Express.js</li>
             <li>Bcrypt JS Library</li>
             <li>JWT(Json Web Tokens) JS Library</li>
+
+            <h1 className="listTitle">DataBase : </h1>
+            <li>MongoDB</li>
           </ul>
-        </p>
+        </div>
         <h1 className="headingsss">About Me:</h1>
         <p>
           I am a passionate and skilled fullstack developer dedicated to
