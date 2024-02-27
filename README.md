@@ -7,9 +7,9 @@ allowing you to seamlessly handle user registrations, logins, profile viewing, a
 
 ## Live Link
 
-<a href="h p/" target="_blank">FUMA</a>
+<a href="https://fuma-gamma.vercel.app/dashboard" target="_blank">FUMA</a>
 
-## Authors
+## Author
 
 - Vinayagoud Meti
 
@@ -53,27 +53,20 @@ This project represents a culmination of my skills and expertise in fullstack de
 
 Here are some screenshots from our FUMA application:
 
-<!-- - **Home:**
-  ![Home](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/acd62e82-f7da-4ba5-8e96-471532c60ee2) -->
 
 - **Home:**
-  ![Home](https://gith 532c60ee2)
-
-- **Add Notes:**
-  ![Add Note](https://githu 0d7b8)
+  ![Home](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/350a0083-f503-4803-a245-5b0091d7f550)
 
 - **Sign Up:**
-  ![Sign Up](https://gi b-512b174364db)
+   ![Sign UP](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/7edfe617-a951-4b0e-a971-ea3f93f14915)
 
 - **Log In:**
-  ![Login](https://g 11-83e5-461798f4699b)
+  ![Login](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/d717fa03-2e60-4580-9c37-99a6fe391998)
 
-- **Update Note:**
-  ![Update Note](https://githu -b35f-538a85fd099a)
+ - **DashBoard:**
+   ![User DashBoard](https://github.com/Vinay-the-dev-bot/FUMA/assets/57762023/aa80e732-a540-4e65-857a-adcc38e23acc)
 
-- **Delete Note:**
-  ![Delete Note](https: -6b5348022b42)
-
+ 
 ## Backend GitHub Repositories
 
 <a href="https://github.com/Vinay-the-dev-bot/FUMA-Server" target="_blank">FUMA Server Github link</a>
