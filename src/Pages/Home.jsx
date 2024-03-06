@@ -45,11 +45,11 @@ const Home = () => {
           edit, and delete user accounts, facilitating efficient user
           management.
         </p>
-        {/* <strong>Responsive Design: </strong>
+        <strong>Responsive Design: </strong>
         <p>
           The application features a responsive design, ensuring seamless
           functionality across various devices and screen sizes.
-        </p> */}
+        </p>
         <strong className="headingsss"> Tech Stack </strong>
         <div>
           Leveraging a combination of frontend and backend technologies, this
