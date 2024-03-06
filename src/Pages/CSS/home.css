@@ -4,6 +4,12 @@
   margin: 75px auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+@media all and (max-width: 783px) {
+  #home {
+    width: 90%;
+    padding: 20px;
+  }
+}
 .listTitle {
   padding-top: 15px;
   text-align: left;

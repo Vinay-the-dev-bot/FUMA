@@ -62,3 +62,24 @@
   width: 80%;
   margin: auto;
 }
+
+@media all and (max-width: 783px) {
+  .userCard {
+    flex-direction: column;
+    width: 90%;
+  }
+  .userDetails {
+    width: 100%;
+  }
+  .userDetailsRow {
+    width: 100%;
+  }
+  .detailsLabel {
+    width: fit-content;
+  }
+  .actionButtons {
+    width: 80%;
+    gap: 20px;
+    margin: 10px auto;
+  }
+}

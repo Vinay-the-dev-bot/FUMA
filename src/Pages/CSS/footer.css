@@ -88,3 +88,19 @@
   color: #a39274;
   transition: 0.5s;
 }
+
+@media all and (max-width: 783px) {
+  #footerDiv {
+    flex-direction: column;
+    height: fit-content;
+  }
+  #footerLeft {
+    width: 100%;
+  }
+  #footerRight {
+    width: 100%;
+  }
+  .homeLinks {
+    width: 100%;
+  }
+}
